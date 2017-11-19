@@ -1,4 +1,5 @@
 /* Image cropper */
+.cr-boundary{width:100%!important;text-align: center;}
 .actionUpload {
     position: relative;
     top: -173px;
