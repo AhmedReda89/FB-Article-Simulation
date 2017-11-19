@@ -1,0 +1,27 @@
+/* Image cropper */
+.actionUpload {
+    position: relative;
+    top: -173px;
+    display: inline-block;
+    padding: 3px 10px;
+    left: calc(50% - 90px);
+    z-index: 10;
+    cursor: pointer!important;
+}
+.actionUpload *{cursor: pointer!important;}
+button input[type="file"],
+.button input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+/* Text editor */
+.medium-editor-element {
+    width: 750px;
+    margin: auto;
+}
+.editable-title{
+    font-size: 1.3em;
+}
