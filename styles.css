@@ -1,8 +1,11 @@
+/* Modal */
+.modal-body{padding: 0;}
+.close{position: absolute;top: 10px;right:10px;z-index: 15;}
 /* Image cropper */
 .cr-boundary{width:100%!important;text-align: center;}
 .actionUpload {
     position: relative;
-    top: -173px;
+    top: -194px;
     display: inline-block;
     padding: 3px 10px;
     left: calc(50% - 90px);
@@ -19,10 +22,15 @@ button input[type="file"],
 }
 
 /* Text editor */
+.editors-wrap{padding: 0 60px;}
 .medium-editor-element {
-    width: 750px;
+    width: 100%;
     margin: auto;
 }
 .editable-title{
     font-size: 1.3em;
+}
+
+@media only screen and (max-width: 600px) {
+    .editors-wrap{padding: 0 30px;}
 }
