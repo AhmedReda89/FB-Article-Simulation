@@ -19,7 +19,7 @@ function doYourMagic() {
 
 // This function trigger adds the cropping wrappers around the targeted area
 var basic = $('#main-cropper').croppie({
-    viewport: { width: 400, height: 250 },
+    viewport: { width: 340, height: 200 },
     boundary: { width: 750, height: 300 },
     showZoomer: false,
     url: 'http://lorempixel.com/500/400/'
