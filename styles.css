@@ -33,6 +33,9 @@ button input[type="file"],
 .editable-title{
     font-size: 1.3em;
 }
+.medium-editor-insert-plugin .medium-insert-buttons .medium-insert-buttons-show span {
+    margin-top: 0px;
+}
 
 @media screen and (max-width: 600px) {
     .modal-dialog{width:90%;}
