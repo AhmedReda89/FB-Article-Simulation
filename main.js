@@ -18,12 +18,21 @@ function doYourMagic() {
 }
 
 // This function trigger adds the cropping wrappers around the targeted area
-var basic = $('#main-cropper').croppie({
-    viewport: { width: 340, height: 200 },
-    boundary: { width: 750, height: 300 },
-    showZoomer: false,
-    url: 'http://lorempixel.com/500/400/'
-});
+if ($(window).width() > 600) {
+    var basic = $('#main-cropper').croppie({
+        viewport: { width: 450, height: 250 },
+        boundary: { width: 750, height: 300 },
+        showZoomer: false,
+        url: 'http://lorempixel.com/500/400/'
+    });
+}else{
+    var basic = $('#main-cropper').croppie({
+        viewport: { width: 300, height: 180 },
+        boundary: { width: 750, height: 300 },
+        showZoomer: false,
+        url: 'http://lorempixel.com/500/400/'
+    });
+}
 
 // readFile function takes the src from the input type file and pass it to the cropping function
 function readFile(input) {
